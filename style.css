@@ -28,6 +28,8 @@ body {
 }
 .note {
   padding: 7px;
+  font-weight: 300;
+  font-size: 15px;
 }
 .debug {
   border-radius: 10px;
