@@ -11,7 +11,7 @@
   </head>
   <body onload="processForm()">
 
-    <img src="https://raw.githubusercontent.com/DomG-Github/stack/master/source/img/cstack_white.png" class="cs-logo">
+    <img src="https://raw.githubusercontent.com/DomG-Github/stack/master/source/img/cstack_white.png" class="cs-logo" onclick="redirect()">
     <img src="https://raw.githubusercontent.com/DomG-Github/stack/master/source/img/cstackicon.png" style="width:32px;height:32px;vertical-align:bottom;bottom:0;position:absolute;" onmouseover="hover()">
 
     <div class="head">
@@ -61,8 +61,10 @@
       document.getElementById('note').innerHTML="(╯°□°）╯︵ ┻━┻";
       setTimeout(function(){
       processForm();
-    }, 500);
+    }, 500);}
 
+    function redirect() {
+      window.location.href="https://stack.constellate.de";
     }
     </script>
 
