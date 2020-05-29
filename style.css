@@ -11,9 +11,18 @@ body {
 }
 
 .head {
-  border-radius: 25px;
-  background: #73AD21;
+  border-radius: 10px;
+  background: #2C2F33;
   padding: 20px;
   width: 200px;
   height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub-head {
+  border-radius: 5px;
+  background: #393c43;
+  padding: 7px;
+  width: auto;
+  height: auto;
 }
