@@ -1,0 +1,38 @@
+<h1>Pass this Variable</h1>
+
+  <form action="receive.html" method="GET">
+  <input type="text" id="thistext" name="thistext">
+    <input type="submit" value="Send" name="submit" id="submit">
+  </form>
+
+  <h1>Receive Variable</h1>
+
+<h2><span id="receive"></span></h2>
+<script>
+    function processForm()
+    {
+    var parameters = location.search.substring(1).split("&");
+    var temp = parameters[0].split("=");
+    x = unescape(temp[1]);
+      document.getElementById('receive').innerHTML=x;
+      }
+    processForm();
+</script>
+
+<script type="text/javascript">
+
+  async function tag() {
+      return new Promise((resolve, reject)=>{
+              if (x === 200) {
+                  resolve(' - Server erreichbar ✅');
+              }
+              else{
+                  resolve(' - Server nicht erreichbar ❌');
+              }
+          ).on('error', (error)=>{
+              resolve(' - Server nicht erreichbar ❌');
+          });
+      });
+  }
+
+</script>

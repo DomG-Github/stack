@@ -25,7 +25,15 @@ body {
   width: auto;
   height: auto;
 }
-.spantag {
+.note {
+  padding: 7px;
+}
+.debug {
+  border-radius: 10px;
+  background: #FFF;
+  padding: 10px;
+  width: 100px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }

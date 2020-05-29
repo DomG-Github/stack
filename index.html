@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Constellate - CStack [DEV]</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -16,15 +16,27 @@
         <a style="color:#FFF">Test</a>
         </div>
 
-    <span id="tag" class="spantag"></span>
-    </div>
-    <button type="button" name="button" onclick="tag()">Click</button>
+    <hr>
 
-  <script type="text/javascript">
-    document.getElementById('tag').innerHTML="Tag";
-    function tag() {
-      document.getElementById('tag').innerHTML="NewTag";
-    }
-    </script>
+    <span id="note" class="note" style="color:#FFF"></span>
+    </div>
+    <center>
+      <br>
+    <form method="GET">
+      <input type="text" id="thistext" name="thistext">
+      <input type="submit" value="Send" name="submit" id="note">
+    </form>
+  </center>
+    <script>
+    function processForm()
+	  {
+		var parameters = location.search.substring(1).split("&");
+		var temp = parameters[0].split("=");
+		x = unescape(temp[1]);
+	    document.getElementById('note').innerHTML=x;
+      }
+    processForm();
+</script>
+
   </body>
 </html>
