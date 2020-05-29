@@ -16,13 +16,14 @@
         <a style="color:#FFF">Test</a>
         </div>
 
-    <span id="note">
+    <span id="tag" class="spantag"></span>
     </div>
-    <button type="button" name="button" onclick="alert()">Click</button>
+    <button type="button" name="button" onclick="tag()">Click</button>
 
   <script type="text/javascript">
-    function alert() {
-      alert('Test')
+    document.getElementById('tag').innerHTML="Tag";
+    function tag() {
+      document.getElementById('tag').innerHTML="NewTag";
     }
     </script>
   </body>
