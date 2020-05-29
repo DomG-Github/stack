@@ -1,0 +1,19 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #23272A;
+}
+.cs-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 128px;
+  height: 128px;
+}
+
+.head {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
