@@ -13,7 +13,7 @@
 
     <div class="head">
       <div class="sub-head">
-        <a style="color:#FFF">Test</a>
+        <a style="color:#FFF">Titel</a>
         </div>
 
     <hr>
@@ -23,11 +23,13 @@
     <center>
       <br>
     <form method="GET">
-      <input type="text" id="thistext" name="thistext">
+      <input type="text" id="text" name="thistext">
       <input type="submit" value="Send" name="submit" id="note">
     </form>
   </center>
     <script>
+    // Default Text - Nachdem die Seite neu geladen wird.
+    document.getElementById('note').innerHTML="Nicht definiert.";
     function processForm()
 	  {
 		var parameters = location.search.substring(1).split("&");
