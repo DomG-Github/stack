@@ -11,6 +11,7 @@
   <body onload="processForm()">
 
     <img src="https://raw.githubusercontent.com/DomG-Github/stack/master/source/img/cstack_white.png" class="cs-logo">
+    <img src="https://raw.githubusercontent.com/DomG-Github/stack/master/source/img/cstackicon.png" style="width:32px;height:32px;vertical-align:bottom;bottom:0;position:absolute;" onmouseover="hover()">
 
     <div class="head">
       <div class="sub-head">
@@ -52,6 +53,18 @@
 
       }
 
+    </script>
+
+    <script type="text/javascript">
+    function hover() {
+      document.getElementById('note').innerHTML="(╯°□°）╯︵ ┻━┻";
+      setTimeout(function(){
+      document.getElementById('note').innerHTML="¯\\_(ツ)_/¯";
+    }, 300);
+    setTimeout(function(){
+    processForm();
+  }, 1000);
+    }
     </script>
 
 

@@ -27,7 +27,7 @@ body {
   height: auto;
 }
 .note {
-  padding: 7px;
+  /*padding: 7px;*/
   font-weight: 300;
   font-size: 15px;
 }
