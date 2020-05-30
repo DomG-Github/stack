@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Constellate - CStack [DEV]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -10,7 +11,7 @@
   </head>
   <body onload="processForm()">
 
-    <img src="https://raw.githubusercontent.com/DomG-Github/stack/master/source/img/cstack_white.png" class="cs-logo">
+    <img src="https://raw.githubusercontent.com/DomG-Github/stack/master/source/img/cstack_white.png" class="cs-logo" onclick="redirect()">
     <img src="https://raw.githubusercontent.com/DomG-Github/stack/master/source/img/cstackicon.png" style="width:32px;height:32px;vertical-align:bottom;bottom:0;position:absolute;" onmouseover="hover()">
 
     <div class="head">
@@ -60,8 +61,10 @@
       document.getElementById('note').innerHTML="(╯°□°）╯︵ ┻━┻";
       setTimeout(function(){
       processForm();
-    }, 500);
+    }, 500);}
 
+    function redirect() {
+      window.location.href="https://stack.constellate.de";
     }
     </script>
 
